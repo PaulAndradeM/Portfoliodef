@@ -5,7 +5,7 @@
       rgba($themeClrPrimary, 0.8),
       rgba($themeClrPrimary, 0.8)
     ),
-    url(../../assets/svg/common-bg.svg);
+    url(assets/svg/common-bg.svg);
   background-position: center;
 
   height: 100vh;
@@ -33,6 +33,7 @@
     position: absolute;
     bottom: 3%;
     left: 50%;
+    padding-bottom: 5rem;
     transform: translateX(-50%);
 
     @include respond(phone) {

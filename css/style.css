@@ -87,7 +87,7 @@ textarea {
   .heading-sec__main::after {
     content: '';
     position: absolute;
-    top: calc(100% + 1.5rem);
+    top: calc(100% + 0.5rem);
     height: 5px;
     width: 3rem;
     background: #5f778b;
@@ -172,11 +172,11 @@ textarea {
 
 .home-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(73, 73, 73, 0.8), rgba(73, 73, 73, 0.8)), url(../../assets/svg/common-bg.svg);
   background-position: center;
   height: 100vh;
-  min-height: 80rem;
-  max-height: 120rem;
+  min-height: 70rem;
+  max-height: 70rem;
   position: relative; }
   @media only screen and (max-width: 37.5em) {
     .home-hero {
@@ -193,6 +193,7 @@ textarea {
         display: none; } }
   .home-hero__mouse-scroll-cont {
     position: absolute;
+    padding-bottom: 5rem;
     bottom: 3%;
     left: 50%;
     transform: translateX(-50%); }
@@ -201,6 +202,10 @@ textarea {
         display: none; } }
   .home-hero__social {
     width: 5rem; }
+    .home-hero__social-icon-link2 {
+      width: 2.5rem;
+      height: 2.5rem;
+      margin-right: 1rem; }
   .home-hero__social-icon-link {
     width: 100%;
     display: block;
@@ -261,7 +266,28 @@ textarea {
         margin: 0 3px; }
       .about__content-details-para:last-child {
         margin-bottom: 2.5rempx; }
-        
+
+#mySvg {
+          width: 16px;
+          height: 16px;
+          transition: transform 0.3s ease-in-out;
+          padding-top: 2px;
+        }
+    
+.home-hero__cta a:hover #mySvg {
+          transform: scale(1.45);}
+
+        .projects__row-content a:hover #mySvg {
+          transform: scale(1.45);}
+
+          #contact-svg {
+            margin-right: 5px;
+
+            width: 16px;
+            height: 16px;
+          }
+          
+  
 
 .projects__row {
   display: grid;
@@ -310,12 +336,19 @@ textarea {
         .projects__row-content-desc {
           font-size: 1.7rem; } }
 
+          #mySvgnnn {
+            color: #fff;
+            background-color: #fff;
+            background: #fff;
+            margin-right: 1rem;
+          }
+
 .contact {
   background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center; }
   .contact__form-container {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 30px rgb(0 0 0 / 66%);
     background: white;
     padding: 4rem;
     margin-top: 6rem;
@@ -601,7 +634,7 @@ textarea {
     border-bottom: 0; }
 
 .main-footer {
-  background: #858585;
+  background: #575757;
   color: #fff; }
   .main-footer__upper {
     display: flex;
@@ -634,7 +667,7 @@ textarea {
     margin-top: 2rem; }
   .main-footer__icon {
     margin-right: 1rem;
-    width: 2.5rem; }
+    width: 3.5rem; }
     .main-footer__icon--mr-none {
       margin-right: 0; }
   .main-footer__lower {
@@ -663,7 +696,10 @@ textarea {
     background: rgba(153, 153, 153, 0.2);
     border-radius: 5px;
     font-weight: 600;
-    color: #696969; }
+    color: #696969;
+    border: 1px solid #b3b3b3;
+  
+  }
 
     #tooltip {
       font-weight: normal;
@@ -696,7 +732,9 @@ textarea {
       border-radius: 5px;
       left: -70px;
       right: 0px;
-      bottom: 60px;
+      bottom: 85px;
+      transition: transform .3s ease;
+      opacity: 0.9997;
     }
 
     .darkkkkkk {
@@ -721,7 +759,7 @@ textarea {
     position: absolute;
     top: 7px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-37%);
     background-color: #eee;
     border-radius: 50%;
     opacity: 1;
